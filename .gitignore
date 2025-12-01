@@ -9,3 +9,8 @@
 project.xcworkspace/
 xcuserdata/
 tests/
+
+# Node/TypeScript
+node_modules/
+dist/
+*.log
