@@ -22,7 +22,6 @@ export class Day1B {
             const zeros = Math.floor(action.clicks / 100);
             const clicks = action.clicks % 100;
             count += zeros;
-            console.log(`Start: ${start}, Clicks: ${clicks}, Zeros: ${zeros}, Count: ${count}`);
             
             switch (action.direction) {
                 case Direction.Left:
@@ -32,7 +31,6 @@ export class Day1B {
                     start = start + clicks;
                     break;
             }
-            console.log(`new Start: ${start}`);
             
             if (start === 0) {
                 count += 1;
@@ -45,8 +43,6 @@ export class Day1B {
                 start = 0 + start - 100;
                 count += 1;
             }
-            console.log(`fixed Start: ${start}, new Count: ${count}`);
-            console.log('    ');
         }
         
         return String(count);
