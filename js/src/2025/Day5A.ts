@@ -6,7 +6,6 @@ interface Range {
     end: number;
 }
 
-
 export class Day5A {
     private run(filePath: string): string {
         const { ranges, numbers } = this.parse(filePath);
